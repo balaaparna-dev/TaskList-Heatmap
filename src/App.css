@@ -1,0 +1,131 @@
+/* Basic layout styling */
+body {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* Container for both form and heatmap */
+.app-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Form Styling */
+.form-container {
+  width: 45%; /* Take up 45% of the space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.heatmap-container {
+  width: 45%; /* Take up 45% of the space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  width: 100%;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center; /* Center the buttons and h3 vertically */
+  justify-content: space-between; /* Space out the elements evenly */
+}
+
+.btn {
+  padding: 5px;
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+/* Heatmap Styling */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each week */
+  grid-gap: 5px; /* Gap between cells */
+}
+
+.heatmap-row {
+  display: contents; /* Each row is part of the grid, no wrapping */
+}
+
+.heatmap-cell {
+  padding: 20px;
+  border: 1px solid #f07777;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.1);
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #4CAF50;
+}
